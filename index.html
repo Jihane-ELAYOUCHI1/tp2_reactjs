@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP 3 - JavaScript Partie 2</title>
+
+    <!-- Liaison avec le fichier JavaScript -->
+    <script src="script.js" defer></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+
+        input {
+            margin: 10px 0;
+            padding: 8px;
+        }
+
+        button {
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+
+        /* Le bouton devient rouge au survol */
+        #btnMessage:hover {
+            background-color: red;
+            color: white;
+        }
+
+        #erreur {
+            color: red;
+        }
+
+        #succes {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Exercice JavaScript - Intégration avec une Page Web</h1>
+
+    <!-- Partie 1 : Interaction avec la page -->
+
+    <p id="message">
+        Cliquez sur le bouton pour afficher un message.
+    </p>
+
+    <button type="button" id="btnMessage">
+        Afficher Message
+    </button>
+
+    <div id="nouvelElement"></div>
+
+    <hr>
+
+    <!-- Partie 2 : Formulaire -->
+
+    <h2>Formulaire de saisie de données</h2>
+
+    <form id="myForm">
+
+        <label for="nom">Nom :</label>
+        <br>
+        <input type="text" id="nom" name="nom">
+        <br>
+
+        <label for="email">Email :</label>
+        <br>
+        <input type="email" id="email" name="email">
+        <br>
+
+        <button type="submit" id="submitBtn">
+            Soumettre
+        </button>
+
+    </form>
+
+    <!-- Zones d'affichage des messages -->
+    <p id="erreur"></p>
+    <p id="succes"></p>
+
+</body>
+</html>
